@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SeuHeu ToDoList</title>
+</head>
+<body>
+    <div class="login">
+        <form id="login-form" class="hidden">
+            <input
+                required
+                maxlength="15" 
+                type="text"
+                placeholder="사용자의 이름을 입력 하세요"
+            />
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+    </div>
+    
+    <div class="center">
+        <div class="center-left">
+            <div id="center-left__1" class="terminal space shadow">
+                <div class="top">
+                    <div class="btns">
+                        <span class="circle red"></span>
+                        <span class="circle yellow"></span>
+                        <span class="circle green"></span>
+                    </div>
+                    <div class="title"> 날짜 / 시간</div>
+                </div>
+                    <div class="clock">
+                        <span class="clock__date"></span>
+                        <span class="clock__time">00:00:00</span>        
+                    </div>
+            </div>
+
+            <div id="center-left__2" class="terminal space shadow">
+                <div class="top">
+                    <div class="btns">
+                        <span class="circle red"></span>
+                        <span class="circle yellow"></span>
+                        <span class="circle green"></span>
+                    </div>
+                    <div class="title"> 날씨 / 위치</div>
+                </div>
+                <div id="weather">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div id="center-left__2" class="terminal space shadow">
+                <div class="top">
+                    <div class="btns">
+                        <span class="circle red"></span>
+                        <span class="circle yellow"></span>
+                        <span class="circle green"></span>
+                    </div>
+                    <div class="title"> 날씨 / 위치</div>
+                </div>
+                <div id="quote">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="center-right">
+            <div id="center-right__1" class="terminal space shadow">
+                <div class="top">
+                    <div class="btns">
+                        <span class="circle red"></span>
+                        <span class="circle yellow"></span>
+                        <span class="circle green"></span>
+                    </div>
+                    <div class="title"> 날씨 / 위치</div>
+                </div>
+                <div class="todo">
+                    <form id="todo-form">
+                        <input type="text" type="checkbox" placeholder="ToDo" />
+                    </form>
+                    <ul id="todo-list"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/login.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/quotes.js"></script>
+</body>
+</html>
